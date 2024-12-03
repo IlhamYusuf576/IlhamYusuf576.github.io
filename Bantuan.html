@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Bantuan</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="bg-gradient-to-r from-primary to-warna1 fixed top-0 left-0 w-full h-16 flex items-center z-50">
+      <div class="container">
+          <div class="flex items-center justify-between relative">
+              <div class="px-4 mt-1">
+                <a href="index.html">
+                  <img src="dist/img/logo.png" alt="logo"
+                  class="w-20"></a>
+              </div>
+              <div class="flex items-center px-4 mt-2">
+                  <button id="ham" name="ham" type="button"
+                  class="block absolute right-4 lg:hidden">
+                      <span class="ham-line transition duration-300 ease-in-out origin-top-left"></span>
+                      <span class="ham-line transition duration-300 ease-in-out"></span>
+                      <span class="ham-line transition duration-300 ease-in-out  origin-bottom-left"></span>
+                  </button>
+
+                  <nav id="nav-menu" class="hidden absolute py-5 bg-primary bg-fixed rounded-lg drop-shadow-2xl max-w-[250px] w-full right-4 mt-96 lg:mt-0 lg:block lg:bg-opacity-0 lg:static lg:max-w-full lg:drop-shadow-none lg:rounded-none">                         
+                    <ul class="block lg:flex">                             
+                      <li class="submenu-item group relative">
+                        <!-- Tombol Produk -->
+                        <a href="javascript:void(0);" id="produk-btn" class="text-base font-medium text-white py-2 mx-8 lg:mx-5 flex lg:mx- lg:pl-21 lg:group-hover:text-white lg:group-hover:opacity-40 xl:ml-10">
+                          Produk
+                          <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                          </svg>
+                        </a>
+                        
+                        <!-- Submenu Produk -->
+                        <div id="produk-submenu" class=" submenu hidden flex-col bg-white w-full rounded-lg shadow-lg p-4 lg:absolute lg:top-full lg:left-0 lg:w-[250px] lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:top-full">
+                          <a href="Penjualan.html" class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700">Penjualan</a>
+                          <a href="Pembelian.html" class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700">Pembelian</a>
+                          <a href="Persediaan.html" class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700">Persediaan</a>
+                          <a href="Akuntansi.html" class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700">Akuntansi</a>
+                          <a href="" class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700">POS</a>
+                        </div>
+                      </li>
+                      
+                      <li class="group">
+                        <a href="harga.html" class=" text-base font-medium text-white py-2 mx-8 flex lg:mx-8 lg:pl-2 lg:group-hover:text-white lg:group-hover:opacity-40 xl:ml-10">Harga</a>
+                      </li>
+                      
+                      <li class="group">
+                        <a href="Faq.html" class="text-base font-medium text-white py-2 mx-8 flex lg:mx-8 lg:pl-2 lg:group-hover:text-white lg:group-hover:opacity-40 xl:ml-10">Faq</a>
+                      </li>
+                      
+                      <li class="text-center group lg:pt-2 pt-9">
+                        <a href="Login.html" class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70 lg:pl-44">Masuk</a>
+                      </li>
+                      
+                      <li class="text-center group lg:pt-2 pt-3">
+                        <a href="" class="signUpBtn rounded-md bg-white px-6 py-2 text-base font-medium text-black duration-300 ease-in-out hover:bg-warna1 hover:text-white">Coba Sekarang</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+
+  </header>
+   <!-- Header End -->
+      
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 lg:pt-2 bg-gradient-to-r from-primary to-warna1" >
+      <div class="container">
+          <div class="flex flex-wrap">
+              <div class="w-full px-4 py-28 lg:py-80 text-center">
+                  <h1 class="-mt-11 block font-bold text-center text-white text-4xl lg:text-6xl mb-4 ">Dapatkan Bantuan</h1>
+                  <p class="block font-normal text-white opacity-50 text-xl lg:text-2xl mb-20">Memberikan solusi cepat dan efektif bagi pengguna yang <br> membutuhkan bantuan terkait layanan kami. <br> dapat membantu.
+                  </p>
+              </div>
+          </div>
+      </div>
+   </section>
+   <!-- Hero Section End -->
+
+<!-- Tiket bantuan start-->
+   <div class="max-w-lg mx-auto p-8 mt-10 bg-white shadow-lg rounded-lg">
+    <h1 class="text-2xl font-bold mb-6 text-center">Tiket Bantuan</h1>
+    <form action="#" method="POST">
+        <div class="mb-4">
+            <label for="nama" class="block text-gray-700 font-medium">Nama</label>
+            <input type="text" id="nama" name="nama" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Masukkan Nama Anda">
+        </div>
+        <div class="mb-4">
+            <label for="telepon" class="block text-gray-700 font-medium">No Telepon</label>
+            <input type="tel" id="telepon" name="telepon" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Masukkan No Telepon Anda">
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-medium">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Masukkan Email Anda">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2">Jenis Tiket</label>
+            <div class="flex flex-col space-y-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="jenis_tiket" value="Tiket 1" class="text-blue-600 focus:ring-2 focus:ring-blue-500">
+                    <span class="ml-2">Tiket 1</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="jenis_tiket" value="Tiket 2" class="text-blue-600 focus:ring-2 focus:ring-blue-500">
+                    <span class="ml-2">Tiket 2</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="jenis_tiket" value="Tiket 3" class="text-blue-600 focus:ring-2 focus:ring-blue-500">
+                    <span class="ml-2">Tiket 3</span>
+                </label>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="subjek" class="block text-gray-700 font-medium">Subjek</label>
+            <input type="text" id="subjek" name="subjek" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Masukkan Subjek">
+        </div>
+        <div class="mb-6">
+            <label for="lampiran" class="block text-gray-700 font-medium">Lampiran</label>
+            <input type="file" id="lampiran" name="lampiran" class="mt-1 w-full">
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Kirim</button>
+    </form>
+</div>
+<!-- Tiket bantuan end-->
+
+   <!-- Start block -->
+   <section class="bg-white dark:bg-white ">
+    <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 pt-40">
+        <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl ">Ada Pertanyaan?</h2>
+        <div class="max-w-screen-md mx-auto">
+            <div id="accordion-flush" data-accordion="collapse" data-active-classes="font-black bg-white dark:bg-white text-gray-900 dark:text-blue-600" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                <h3 id="accordion-flush-heading-1">
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                        <span>1. Apa itu erpayo</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h3>
+                <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 font-normal text-slate-500 ">Erpayo adalah sebuah aplikasi SaaS ERP (Enterprise Resource Planning) yang dirancang khusus untuk Usaha Mikro, Kecil, dan Menengah (UMKM). Aplikasi ini membantu UMKM dalam mengelola berbagai aspek bisnis, seperti akuntansi, inventaris, penjualan, pembelian, dan Point of Sales dalam satu platform terpadu. Erpayo akan menambah fitur secara bertahap sesuai kebutuhan bisnis di UMKM.</p>
+                    </div>
+                </div>
+                <h3 id="accordion-flush-heading-2">
+                  <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                      <span>2. Apa saja fitur utama yang ditawarkan oleh Erpayo?</span>
+                      <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+              </h3>
+              <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                  <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                      <p class="mb-2 font-normal text-slate-500 ">Erpayo menawarkan berbagai fitur, antara lain:</p>
+                      <ul class="pl-5 text-primary list-disc dark:text-primary">
+                          <li><span class="font-semibold">Akuntansi dan Keuangan : </span>Mengelola pembukuan, laporan keuangan, dan anggaran.</li>
+                          <li><span class="font-semibold">Manajemen Inventaris : </span>Melacak stok, pengadaan, dan level inventaris.</li>
+                          <li><span class="font-semibold">Manajemen Penjualan : </span>Mengelola pesanan, penagihan, dan hubungan pelanggan (CRM).</li>
+                          <li><span class="font-semibold">Pengelolaan Point of Sales : </span>Mengelola penjualan langsung via Point of Sales.</li>
+                          <li><span class="font-semibold">Manajemen Pembelian : </span>Memantau pembelian dan pengeluaran.</li>
+                          <li><span class="font-semibold">Laporan dan Analitik : </span> Menghasilkan laporan untuk analisis bisnis.</li>
+                      </ul>
+                  </div>
+              </div>
+              <h3 id="accordion-flush-heading-3">
+                <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+                text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-3"
+                 aria-expanded="true" aria-controls="accordion-flush-body-3">
+                    <span>3. Bagaimana cara mendaftar dan mulai menggunakan Erpayo?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h3>
+            <div id="accordion-flush-body-3" class="" aria-labelledby="accordion-flush-heading-3">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 font-normal text-slate-500 ">Untuk mulai menggunakan Erpayo, Anda hanya perlu mengunjungi situs web resmi
+                       Erpayo, membuat akun, dan memilih paket yang sesuai dengan kebutuhan bisnis Anda. Setelah mendaftar, Anda dapat langsung
+                       mulai mengatur sistem ERP sesuai kebutuhan bisnis Anda.
+                    </p>
+                </div>
+            </div>
+            <h3 id="accordion-flush-heading-4">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+              text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-4"
+               aria-expanded="true" aria-controls="accordion-flush-body-4">
+                  <span>4. Apakah Erpayo cocok untuk semua jenis UMKM?</span>
+                  <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+          </h3>
+          <div id="accordion-flush-body-4" class="" aria-labelledby="accordion-flush-heading-4">
+              <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 font-normal text-slate-500 ">Ya, Erpayo dirancang fleksibel untuk memenuhi 
+                    kebutuhan berbagai jenis UMKM, mulai dari perdagangan, manufaktur, hingga jasa. Aplikasi ini 
+                    dapat disesuaikan dengan skala bisnis Anda.
+                  </p>
+              </div>
+          </div>
+          <h3 id="accordion-flush-heading-5">
+            <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+            text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-5"
+             aria-expanded="true" aria-controls="accordion-flush-body-5">
+                <span>5. Apakah Erpayo aman untuk menyimpan data bisnis saya?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </h3>
+        <div id="accordion-flush-body-5" class="" aria-labelledby="accordion-flush-heading-5">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 font-normal text-slate-500 ">Keamanan data adalah prioritas utama Erpayo.
+                   Kami menggunakan enkripsi tingkat lanjut dan standar keamanan industri untuk memastikan 
+                   data bisnis Anda aman dan terlindungi.
+                </p>
+            </div>
+        </div>
+        <h3 id="accordion-flush-heading-6">
+          <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+          text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-6"
+           aria-expanded="true" aria-controls="accordion-flush-body-6">
+              <span>6. Bagaimana dukungan pelanggan Erpayo?</span>
+              <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+      </h3>
+      <div id="accordion-flush-body-6" class="" aria-labelledby="accordion-flush-heading-6">
+          <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 font-normal text-slate-500 ">Erpayo menyediakan dukungan pelanggan melalui berbagai saluran,
+                 termasuk email, chat, dan telepon. Tim dukungan kami siap membantu Anda dengan masalah teknis atau pertanyaan 
+                 lainnya.
+              </p>
+          </div>
+      </div>
+      <h3 id="accordion-flush-heading-7">
+        <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+        text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-7"
+         aria-expanded="true" aria-controls="accordion-flush-body-7">
+            <span>7. Apakah ada pelatihan atau panduan untuk menggunakan Erpayo?</span>
+            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+    </h3>
+    <div id="accordion-flush-body-7" class="" aria-labelledby="accordion-flush-heading-7">
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 font-normal text-slate-500 ">Ya, Erpayo menyediakan berbagai sumber daya untuk membantu Anda memulai,
+              termasuk panduan pengguna, tutorial video, dan webinar. Kami juga menawarkan pelatihan langsung untuk tim Anda jika 
+              diperlukan.
+            </p>
+        </div>
+    </div>
+    <h3 id="accordion-flush-heading-8">
+      <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+      text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-8"
+       aria-expanded="true" aria-controls="accordion-flush-body-8">
+          <span>8. Apakah saya bisa mencoba Erpayo sebelum membeli?</span>
+          <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+  </h3>
+  <div id="accordion-flush-body-8" class="" aria-labelledby="accordion-flush-heading-8">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 font-normal text-slate-500 ">Ya, Erpayo memiliki paket gratis selamanya. 
+            Jika anda membutuhkan layanan yang lebih maka anda dapat membeli dengan memilih paket yang tersedia.
+          </p>
+      </div>
+  </div>
+  <h3 id="accordion-flush-heading-9">
+    <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+    text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-9"
+     aria-expanded="true" aria-controls="accordion-flush-body-9">
+        <span>9. Bagaimana sistem penagihan Erpayo?</span>
+        <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+</h3>
+<div id="accordion-flush-body-9" class="" aria-labelledby="accordion-flush-heading-9">
+    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 font-normal text-slate-500 ">Erpayo menawarkan berbagai paket berlangganan yang dapat dibayar
+           bulanan atau tahunan. Anda dapat memilih paket yang sesuai dengan kebutuhan bisnis Anda, dan pembayaran dapat
+            dilakukan melalui kartu kredit, kartu kredit atau metode pembayaran lainnya.
+        </p>
+    </div>
+</div>
+<h3 id="accordion-flush-heading-10">
+  <button type="button" class="flex items-center justify-between w-full py-5 font-medium 
+  text-left border-b border-gray-200 dark:border-gray-700" data-accordion-target="#accordion-flush-body-10"
+   aria-expanded="true" aria-controls="accordion-flush-body-10">
+      <span>10. Bagaimana cara menghubungi tim Erpayo jika saya memiliki pertanyaan lebih lanjut?</span>
+      <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+</h3>
+<div id="accordion-flush-body-10" class="" aria-labelledby="accordion-flush-heading-10">
+  <div class="py-5 border-b border-gray-200 dark:border-gray-700">Anda dapat menghubungi tim kami melalui halaman "Kontak"
+      di situs web resmi Erpayo atau langsung mengirim email ke support@erpayo.id. Tim kami akan merespons secepat mungkin untuk
+      membantu Anda.
+      </p>
+  </div>
+</div>
+            </div> 
+        </div>               
+    </div>
+</section>
+<!-- End block -->
+   
+
+  <!-- ====== Footer Section Start -->
+  <footer
+  class="absolute w-full bg-gradient-to-r from-primary to-warna1 pt-20">
+  <div class="container">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+        <div class=" w-full">
+          <a  class="inline-block max-w-[160px]"
+          >
+            <img
+              src="dist/img/logo.png"
+              alt="logo"
+              class="max-w-full"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 lg:ml-44 xl:w-2/12  ">
+        <div class=" w-full">
+          <h4 class="mb-9 text-lg font-bold text-white">Fitur Unggulan</h4>
+          <ul>
+              <a class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Penjualan
+              </a>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline "
+              >
+                Pembelian
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Persediaan
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Akuntansi
+              </a>
+            </li>
+            <li></li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                POS
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12  xl:w-2/12">
+        <div class="mb-10 w-full">
+          <h4 class="mb-9 text-lg font-bold text-white">Erpayo</h4>
+          <ul>
+            <li>
+              <a
+                href="Faq.html"
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Faq
+              </a>
+            </li>
+            <li>
+              <a
+                href="Bantuan.html"
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Bantuan
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Tutorial
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Hubungi Kami
+              </a>
+            </li>
+            <li>
+              <a
+                href="Privacy Police.html"
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Privacy Policy
+              </a>
+            </li>
+            <li></li>
+              <a
+                href="Term & Condition.html"
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline"
+              >
+                Term and Condition
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 lg:ml-18 xl:w-2/12">
+        <div class="mb-10 w-full">
+          <h4 class="mb-9 text-lg font-bold text-white">
+            Tentang Kami
+          </h4>
+          <ul>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300"
+              >
+                PT Creasi Tekno Solusi
+              </a>
+            </li>
+            <li>
+              <a 
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300"
+              >
+              Perum Saputra Raya No.2 Blok M7, Area Sawah, Lebo, Kec. Warungasem, Kabupaten Batang, Jawa Tengah 51252 
+              </a>
+              
+            </li>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300"
+              >
+              (0285) 3971021
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="mb-3 inline-block font-normal text-slate-300"
+              >
+              support@erpayo.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</footer>
+<!-- ====== Footer Section End -->
+
+     <script src="dist/js/script.js"></script>
+     <script>
+      // JavaScript untuk toggle submenu Produk
+      document.getElementById('produk-btn').addEventListener('click', function () {
+        const submenu = document.getElementById('produk-submenu');
+        submenu.classList.toggle('hidden');  // Toggle class hidden untuk menampilkan/menyembunyikan submenu
+      });
+    </script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+</html>

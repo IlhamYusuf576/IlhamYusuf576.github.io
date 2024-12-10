@@ -20,27 +20,27 @@
 
 <body>
   <!-- Header Start -->
-  <header class="bg-gradient-to-b from-primary to-transparent fixed top-0 left-0 w-full h-16 flex items-center z-50">
+  <header class="bg-gradient-to-b from-primary to-transparent fixed top-0 left-0 w-full h-16 flex items-center z-50 ">
     <div class="container">
       <div class="flex items-center justify-between relative">
         <div class="px-4 mt-1">
           <a href="index.html">
-            <img src="dist/img/logo.png" alt="logo" class="w-20"></a>
+            <img src="dist/img/logo.png" alt="logo" class="w-20">
+          </a>
         </div>
         <div class="flex items-center px-4 mt-2">
           <button id="ham" name="ham" type="button" class="block absolute right-4 lg:hidden">
             <span class="ham-line transition duration-300 ease-in-out origin-top-left"></span>
             <span class="ham-line transition duration-300 ease-in-out"></span>
-            <span class="ham-line transition duration-300 ease-in-out  origin-bottom-left"></span>
+            <span class="ham-line transition duration-300 ease-in-out origin-bottom-left"></span>
           </button>
 
           <nav id="nav-menu"
             class="hidden absolute py-5 bg-primary bg-fixed rounded-lg drop-shadow-2xl max-w-[250px] w-full right-4 mt-96 lg:mt-0 lg:block lg:bg-opacity-0 lg:static lg:max-w-full lg:drop-shadow-none lg:rounded-none">
             <ul class="block lg:flex">
               <li class="submenu-item group relative">
-                <!-- Tombol Produk -->
                 <a id="produk-btn"
-                  class="text-base font-medium text-white py-2 mx-8 lg:mx-5 flex lg:mx- lg:pl-21 lg:group-hover:text-white lg:group-hover:opacity-40 xl:ml-10">
+                  class="text-base font-medium text-white py-2 mx-8 lg:mx-5 flex lg:pl-21 lg:group-hover:text-white lg:group-hover:opacity-40 cursor-pointer">
                   Produk
                   <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -60,15 +60,15 @@
                     class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700 hover:font-semibold hover:bg-gray-100 transition-all duration-300 ease-in-out">Persediaan</a>
                   <a href="Akuntansi.html"
                     class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700 hover:font-semibold hover:bg-gray-100 transition-all duration-300 ease-in-out">Akuntansi</a>
-                  <a href=""
+                  <a href="Pos.html"
                     class="block rounded px-4 py-[10px] text-gray-400 hover:text-sky-700 hover:font-semibold hover:bg-gray-100 transition-all duration-300 ease-in-out">POS</a>
                 </div>
-
               </li>
+
 
               <li class="group">
                 <a href="harga.html"
-                  class=" text-base font-medium text-white py-2 mx-8 flex lg:mx-8 lg:pl-2 lg:group-hover:text-white lg:group-hover:opacity-40 xl:ml-10">Harga</a>
+                  class="text-base font-medium text-white py-2 mx-8 flex lg:mx-8 lg:pl-2 lg:group-hover:text-white lg:group-hover:opacity-40 xl:ml-10">Harga</a>
               </li>
 
               <li class="group">
@@ -78,7 +78,7 @@
 
               <li class="text-center group lg:pt-2 pt-9">
                 <a href="Login.html"
-                  class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70 lg:pl-44">Masuk</a>
+                  class="loginBtn lg:pl-28 xl:pl-48 2xl:pl-96 px-10 py-2 text-base font-medium text-white hover:opacity-70">Masuk</a>
               </li>
 
               <li class="text-center group lg:pt-2 pt-3">
@@ -91,7 +91,6 @@
         </div>
       </div>
     </div>
-
   </header>
   <!-- Header End -->
 
@@ -376,30 +375,34 @@
             </a>
           </div>
         </div>
-        <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 lg:ml-44 xl:w-2/12  ">
+        <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 lg:ml-0 xl:ml-44 xl:w-2/12  ">
           <div class="mb-10 w-full">
             <h4 class="mb-9 text-lg font-bold text-white">Fitur Unggulan</h4>
             <ul>
-              <a href="Penjualan.html" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
+              <a href="Penjualan.html"
+                class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
                 Penjualan
               </a>
               <li>
-                <a href="Pembelian.html" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline ">
+                <a href="Pembelian.html"
+                  class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline ">
                   Pembelian
                 </a>
               </li>
               <li>
-                <a href="Persediaan.html" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
+                <a href="Persediaan.html"
+                  class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
                   Persediaan
                 </a>
               </li>
               <li>
-                <a href="Akuntansi.html" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
+                <a href="Akuntansi.html"
+                  class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
                   Akuntansi
                 </a>
               </li>
               <li></li>
-              <a href="" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
+              <a href="Pos.html" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
                 POS
               </a>
               </li>
@@ -416,13 +419,6 @@
                   Faq
                 </a>
               </li>
-              <li>
-                <a href="Bantuan.html"
-                  class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
-                  Bantuan
-                </a>
-              </li>
-              <li>
                 <a href="" class="mb-3 inline-block font-normal text-slate-300 hover:text-stone-950 hover:underline">
                   Tutorial
                 </a>
